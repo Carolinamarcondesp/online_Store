@@ -1,0 +1,316 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mestra.master.cs" Inherits="onlineStore.Mestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Header Area Start -->
+        
+
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="header-top-wrapper">
+                                <div class="header-top-info">
+                                    <div class="email">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.95" height="13.4"
+                                                viewBox="0 0 16.95 13.4">
+                                                <g id="Mail" transform="translate(0.975 0.7)">
+                                                    <path id="Path_1" data-name="Path 1"
+                                                        d="M3.5,4h12A1.5,1.5,0,0,1,17,5.5v9A1.5,1.5,0,0,1,15.5,16H3.5A1.5,1.5,0,0,1,2,14.5v-9A1.5,1.5,0,0,1,3.5,4Z"
+                                                        transform="translate(-2 -4)" fill="none" stroke="#1a2224"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" />
+                                                    <path id="Path_2" data-name="Path 2" d="M17,6,9.5,11.25,2,6"
+                                                        transform="translate(-2 -4.5)" fill="none" stroke="#1a2224"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="text">
+                                            <span>olog.wetbise@mail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="d-none d-lg-block">
+                        <nav class="menu-area d-flex align-items-center">
+                            <div class="logo">
+                                <a href="index.aspx">
+                                    <img src="dist/images/logo/logo.png" alt="logo" /></a>
+                            </div>
+                            <ul class="main-menu d-flex align-items-center">
+                                <li><a class="active" href="index.aspx">Home</a></li>
+
+                            </ul>
+
+                            <div class="menu-icon ml-auto">
+                                <ul>
+
+                                    <li>
+                                        <a href="cart.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22">
+                                                <g id="Icon" transform="translate(-1524 -89)">
+                                                    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="0.909" cy="0.952"
+                                                        rx="0.909" ry="0.952" transform="translate(1531.364 108.095)"
+                                                        fill="none" stroke="#1a2224" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" />
+                                                    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="0.909" cy="0.952"
+                                                        rx="0.909" ry="0.952" transform="translate(1541.364 108.095)"
+                                                        fill="none" stroke="#1a2224" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" />
+                                                    <path id="Path_3" data-name="Path 3"
+                                                        d="M1,1H4.636L7.073,13.752a1.84,1.84,0,0,0,1.818,1.533h8.836a1.84,1.84,0,0,0,1.818-1.533L21,5.762H5.545"
+                                                        transform="translate(1524 89)" fill="none" stroke="#1a2224"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+
+                                 
+                                                    <span class="cart" runat="server" id="cart_quantidade2" style="background-color: red;"></span>
+                                                
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-dashboard.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                height="20" viewBox="0 0 18 20">
+                                                <g id="Account" transform="translate(1 1)">
+                                                    <path id="Path_86" data-name="Path 86"
+                                                        d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2"
+                                                        transform="translate(-4 -3)" fill="none" stroke="#000"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle id="Ellipse_9" data-name="Ellipse 9" cx="4" cy="4" r="4"
+                                                        transform="translate(4)" fill="#fff" stroke="#000"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg></a>
+                                    </li>
+                                    <li ID="userlogout" runat="server">
+                                        <a href="logout.aspx">
+                                            <img src="images/sigout.png" style="width: 20px; height: 20px"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <aside class="d-lg-none">
+                        <div id="mySidenav" class="sidenav">
+                            <div class="close-mobile-menu">
+                                <a href="javascript:void(0)" id="menu-close" class="closebtn"
+                                    onclick="closeNav()">&times;</a>
+                            </div>
+
+                            <li><a href="index.aspx">Home</a></li>
+
+
+                        </div>
+                        <div class="mobile-nav d-flex align-items-center justify-content-between">
+                            <div class="logo">
+                                <a href="index.aspx">
+                                    <img src="dist/images/logo/logo.png" alt="logo" /></a>
+                            </div>
+                            <div class="menu-icon">
+                                <ul>
+
+                                    <li>
+                                        <a href="cart.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22">
+                                                <g id="Icon" transform="translate(-1524 -89)">
+                                                    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="0.909" cy="0.952"
+                                                        rx="0.909" ry="0.952" transform="translate(1531.364 108.095)"
+                                                        fill="none" stroke="#1a2224" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" />
+                                                    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="0.909" cy="0.952"
+                                                        rx="0.909" ry="0.952" transform="translate(1541.364 108.095)"
+                                                        fill="none" stroke="#1a2224" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" />
+                                                    <path id="Path_3" data-name="Path 3"
+                                                        d="M1,1H4.636L7.073,13.752a1.84,1.84,0,0,0,1.818,1.533h8.836a1.84,1.84,0,0,0,1.818-1.533L21,5.762H5.545"
+                                                        transform="translate(1524 89)" fill="none" stroke="#1a2224"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                            <span class="cart" runat="server" id="cart_quantidade" style="background-color: red;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-dashboard.aspx">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                                                viewBox="0 0 18 20">
+                                                <g id="Account" transform="translate(1 1)">
+                                                    <path id="Path_86" data-name="Path 86"
+                                                        d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2"
+                                                        transform="translate(-4 -3)" fill="none" stroke="#000"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                    <circle id="Ellipse_9" data-name="Ellipse 9" cx="4" cy="4" r="4"
+                                                        transform="translate(4)" fill="#fff" stroke="#000"
+                                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li ID="userlogout2" runat="server">
+                                        <a href="logout.aspx">
+                                            <img src="images/sigout.png" style="width: 20px; height: 20px"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hamburger-menu">
+                                <a style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</a>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- Body overlay -->
+                    <div class="overlay" id="overlayy"></div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Area End -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer>
+            <div class="container">
+
+                <div class="row main-footer">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="main-footer-info">
+                            <img src="dist/images/logo/white.png" alt="Logo" class="img-fluid">
+                            <p>
+                                Este website é somente para fins demonstrativos resultando de trabalhos académicos
+                                efectuados no ambito do curso de Técnico/a Especialista em Tecnologias e Programação de Sistemas de Informação publicado no despacho nº 172/2020
+                                referente á turma de 2021.
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="main-footer-quicklinks">
+                            <h6>Company</h6>
+                            <ul class="quicklink">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Help &amp; Support</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="main-footer-quicklinks">
+                            <h6>Quick links</h6>
+                            <ul class="quicklink">
+                                <li><a href="#">New Realease</a></li>
+                                <li><a href="#">Customize</a></li>
+                                <li><a href="#">Sale &amp; Discount</a></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                        <div class="main-footer-quicklinks">
+                            <h6>Account</h6>
+                            <ul class="quicklink">
+                                <li><a href="#">Your Bag</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Order Completed</a></li>
+                                <li><a href="logout.aspx">Log-out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright d-flex justify-content-between align-items-center">
+                            <div class="copyright-text order-2 order-lg-1">
+                                <p>&copy; 2022. Design and Developed by <a href="#">Anna Carolina</a></p>
+                            </div>
+                            <div class="copyright-links order-1 order-lg-2">
+                                <a href="#" class="ml-0"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/63669bb3b0d6371309cd7b32/1gh4d0dvl';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+        <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/slick.min.js"></script>
+    <script src="src/scss/vendors/plugin/js/jquery.nice-select.min.js"></script>
+    <script src="dist/main.js"></script>
+    <script>
+        function openNav() {
+
+            document.getElementById("mySidenav").style.width = "350px";
+            $('#overlayy').addClass("active");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            $('#overlayy').removeClass("active");
+        }
+
+        function procurarArtigo() {
+            var input, filter, div, produtos, divTitulo, i, txtValue, divProduto;
+            input = document.getElementById("input_procurar");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("artigos");
+
+            produtos = div.getElementsByClassName("product-item-info");
+
+            for (i = 0; i < produtos.length; i++) {
+
+                txtValue = produtos[i].textContent || produtos[i].innerText;
+                divProduto = document.getElementById("product-item" + i);
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    divProduto.style.display = "";
+                } else {
+                    divProduto.style.display = "none";
+                }
+            }
+        }
+    </script>
+    </form>
+</body>
+</html>

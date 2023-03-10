@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onlineStore", "onlineStore.csproj", "{50322B04-5272-4D55-B15E-CFCBE1D7EB14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50322B04-5272-4D55-B15E-CFCBE1D7EB14}.Debug|x86.ActiveCfg = Debug|x86
+		{50322B04-5272-4D55-B15E-CFCBE1D7EB14}.Debug|x86.Build.0 = Debug|x86
+		{50322B04-5272-4D55-B15E-CFCBE1D7EB14}.Release|x86.ActiveCfg = Release|x86
+		{50322B04-5272-4D55-B15E-CFCBE1D7EB14}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C333C2D-C450-44DE-BFC3-0C5BD33EEB8A}
+	EndGlobalSection
+EndGlobal

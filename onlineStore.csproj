@@ -1,0 +1,591 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{50322B04-5272-4D55-B15E-CFCBE1D7EB14}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>onlineStore</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\onlineStore\config\applicationhost.config" />
+    <None Include=".vs\onlineStore\v16\.suo" />
+    <None Include="onlineStore\assets\css\bootstrap-grid.css.map" />
+    <None Include="onlineStore\assets\css\bootstrap-reboot.css.map" />
+    <None Include="onlineStore\assets\css\bootstrap.css.map" />
+    <None Include="onlineStore\assets\css\main.css.map" />
+    <None Include="onlineStore\bin\onlineStore.dll.config" />
+    <None Include="onlineStore\bin\roslyn\csc.exe.config" />
+    <None Include="onlineStore\bin\roslyn\csc.rsp" />
+    <None Include="onlineStore\bin\roslyn\csi.exe.config" />
+    <None Include="onlineStore\bin\roslyn\csi.rsp" />
+    <None Include="onlineStore\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <None Include="onlineStore\bin\roslyn\Microsoft.Managed.Core.targets" />
+    <None Include="onlineStore\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <None Include="onlineStore\bin\roslyn\vbc.exe.config" />
+    <None Include="onlineStore\bin\roslyn\vbc.rsp" />
+    <None Include="onlineStore\bin\roslyn\VBCSCompiler.exe.config" />
+    <None Include="onlineStore\dist\fonts\fa-brands-400.067595ad77ecc0db9c81c8905a7eef32.woff2" />
+    <None Include="onlineStore\dist\fonts\fa-brands-400.57dcda6f368ea90179f75cbdae96c263.eot" />
+    <None Include="onlineStore\dist\fonts\fa-brands-400.9ec698d1a597bff5df337094b71ddaaf.ttf" />
+    <None Include="onlineStore\dist\fonts\fa-brands-400.b564da88bbf0c4aa446fa19653713cd1.woff" />
+    <None Include="onlineStore\dist\fonts\fa-regular-400.3351f435b3c9037fd88aeb04dc1e43bc.eot" />
+    <None Include="onlineStore\dist\fonts\fa-regular-400.4165c2688309cbfb1b877caf8f75afb5.woff2" />
+    <None Include="onlineStore\dist\fonts\fa-regular-400.73cf49a2232c06c920b7a34e36bfb58c.woff" />
+    <None Include="onlineStore\dist\fonts\fa-regular-400.a0e3ac82940c1998c5977fd4bc1f5ef6.ttf" />
+    <None Include="onlineStore\dist\fonts\fa-solid-900.55eb2a60e8181f0e68b558c991973bf0.woff2" />
+    <None Include="onlineStore\dist\fonts\fa-solid-900.75f38a159982b6bd1704891332d95fa7.ttf" />
+    <None Include="onlineStore\dist\fonts\fa-solid-900.89e02bae13c9131c7468b1e729339ac1.eot" />
+    <None Include="onlineStore\dist\fonts\fa-solid-900.cdfec5cf5e9840889790bcf2c4042583.woff" />
+    <None Include="onlineStore\Mestra.Master" />
+    <None Include="onlineStore\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="onlineStore\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="onlineStore\obj\Debug\onlineStore.csproj.AssemblyReference.cache" />
+    <None Include="onlineStore\obj\Debug\onlineStore.csproj.CopyComplete" />
+    <None Include="onlineStore\obj\Debug\onlineStore.csproj.CoreCompileInputs.cache" />
+    <None Include="onlineStore\onlineStore.csproj" />
+    <None Include="onlineStore\packages.config" />
+    <None Include="onlineStore\PDFS\14112022104701.pdf" />
+    <None Include="onlineStore\PDFS\14112022105110.pdf" />
+    <None Include="onlineStore\PDFS\14112022141710.pdf" />
+    <None Include="onlineStore\PDFS\14112022141829.pdf" />
+    <None Include="onlineStore\PDFS\14112022145712.pdf" />
+    <None Include="onlineStore\PDFS\14112022174820.pdf" />
+    <None Include="onlineStore\PDFS\Template\form_encomenda.pdf" />
+    <None Include="onlineStore\src\scss\abstracts\_functions.scss" />
+    <None Include="onlineStore\src\scss\abstracts\_variables.scss" />
+    <None Include="onlineStore\src\scss\base\_reset.scss" />
+    <None Include="onlineStore\src\scss\base\_typography.scss" />
+    <None Include="onlineStore\src\scss\components\_buttons.scss" />
+    <None Include="onlineStore\src\scss\components\_cartitem.scss" />
+    <None Include="onlineStore\src\scss\components\_customersreview.scss" />
+    <None Include="onlineStore\src\scss\components\_form.scss" />
+    <None Include="onlineStore\src\scss\components\_orderitem.scss" />
+    <None Include="onlineStore\src\scss\components\_product-item.scss" />
+    <None Include="onlineStore\src\scss\components\_productcategory.scss" />
+    <None Include="onlineStore\src\scss\layout\_about.scss" />
+    <None Include="onlineStore\src\scss\layout\_banner.scss" />
+    <None Include="onlineStore\src\scss\layout\_brand.scss" />
+    <None Include="onlineStore\src\scss\layout\_breadcrumb.scss" />
+    <None Include="onlineStore\src\scss\layout\_card-price.scss" />
+    <None Include="onlineStore\src\scss\layout\_features.scss" />
+    <None Include="onlineStore\src\scss\layout\_footer.scss" />
+    <None Include="onlineStore\src\scss\layout\_header.scss" />
+    <None Include="onlineStore\src\scss\main.scss" />
+    <None Include="onlineStore\src\scss\pages\shop.scss" />
+    <None Include="onlineStore\src\scss\pages\_account.scss" />
+    <None Include="onlineStore\src\scss\pages\_billing-information.scss" />
+    <None Include="onlineStore\src\scss\pages\_cart.scss" />
+    <None Include="onlineStore\src\scss\pages\_contact.scss" />
+    <None Include="onlineStore\src\scss\pages\_deliver-info.scss" />
+    <None Include="onlineStore\src\scss\pages\_forget-password.scss" />
+    <None Include="onlineStore\src\scss\pages\_home.scss" />
+    <None Include="onlineStore\src\scss\pages\_order.scss" />
+    <None Include="onlineStore\src\scss\pages\_payment.scss" />
+    <None Include="onlineStore\src\scss\pages\_product-details.scss" />
+    <None Include="onlineStore\src\scss\pages\_shipping.scss" />
+    <None Include="onlineStore\src\scss\pages\_styleguide.scss" />
+    <None Include="onlineStore\src\scss\pages\_user-dashboard.scss" />
+    <None Include="onlineStore\src\scss\pages\_verify.scss" />
+    <None Include="onlineStore\src\scss\pages\_wishlist.scss" />
+    <None Include="onlineStore\src\scss\themes\_theme.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\bootstrap.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_alert.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_background-variant.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_badge.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_caret.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_deprecate.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_float.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_forms.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_grid-framework.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_grid.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_hover.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_image.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_lists.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_nav-divider.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_resize.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_screen-reader.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_size.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_table-row.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_text-hide.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_transition.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\mixins\_visibility.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_align.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_background.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_borders.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_clearfix.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_display.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_embed.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_flex.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_float.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_interactions.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_overflow.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_position.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_screenreaders.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_shadows.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_sizing.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_spacing.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_stretched-link.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_text.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\utilities\_visibility.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\vendor\_rfs.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_alert.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_badge.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_breadcrumb.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_button-group.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_buttons.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_card.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_carousel.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_close.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_code.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_custom-forms.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_dropdown.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_forms.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_functions.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_grid.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_images.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_input-group.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_jumbotron.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_list-group.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_media.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_mixins.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_modal.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_nav.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_navbar.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_pagination.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_popover.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_print.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_progress.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_reboot.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_root.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_spinners.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_tables.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_toasts.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_tooltip.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_transitions.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_type.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_utilities.scss" />
+    <None Include="onlineStore\src\scss\vendors\bootstrap\scss\_variables.scss" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-brands-400.eot" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-brands-400.ttf" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-brands-400.woff" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-brands-400.woff2" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-regular-400.eot" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-regular-400.ttf" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-regular-400.woff" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-regular-400.woff2" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-solid-900.eot" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-solid-900.ttf" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-solid-900.woff" />
+    <None Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-solid-900.woff2" />
+    <None Include="onlineStore\Web.config" />
+    <None Include="onlineStore\Web.Debug.config" />
+    <None Include="onlineStore\Web.Release.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\install.ps1" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\uninstall.ps1" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CSharp.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.VisualBasic.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CSharp.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Managed.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.VisualBasic.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="onlineStore\404.aspx" />
+    <Content Include="onlineStore\access.aspx" />
+    <Content Include="onlineStore\alterapalavrapass.aspx" />
+    <Content Include="onlineStore\assets\css\bootstrap-grid.css" />
+    <Content Include="onlineStore\assets\css\bootstrap-reboot.css" />
+    <Content Include="onlineStore\assets\css\bootstrap.css" />
+    <Content Include="onlineStore\assets\css\main.css" />
+    <Content Include="onlineStore\backoffice_encomendas.aspx" />
+    <Content Include="onlineStore\backoffice_produtos.aspx" />
+    <Content Include="onlineStore\backoffice_utilizadores.aspx" />
+    <Content Include="onlineStore\billing.aspx" />
+    <Content Include="onlineStore\bin\itextsharp.dll" />
+    <Content Include="onlineStore\bin\itextsharp.pdfa.dll" />
+    <Content Include="onlineStore\bin\itextsharp.xml" />
+    <Content Include="onlineStore\bin\itextsharp.xtra.dll" />
+    <Content Include="onlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="onlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="onlineStore\bin\onlineStore.dll" />
+    <Content Include="onlineStore\bin\onlineStore.pdb" />
+    <Content Include="onlineStore\bin\roslyn\csc.exe" />
+    <Content Include="onlineStore\bin\roslyn\csi.exe" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="onlineStore\bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.AppContext.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Console.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Net.Http.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="onlineStore\bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="onlineStore\bin\roslyn\vbc.exe" />
+    <Content Include="onlineStore\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="onlineStore\cart.aspx" />
+    <Content Include="onlineStore\dist\fonts\fa-brands-400.39dc51162f292b85ec8f701292e6a5f4.svg" />
+    <Content Include="onlineStore\dist\fonts\fa-brands-400.9d67fa1429375bd2a899a17eb77d0342.svg" />
+    <Content Include="onlineStore\dist\fonts\fa-regular-400.5d0861781aeef6c82fda3a3076954a1b.svg" />
+    <Content Include="onlineStore\dist\fonts\fa-regular-400.dc2561f4401f40bd65bf2080b2ec5fde.svg" />
+    <Content Include="onlineStore\dist\fonts\fa-solid-900.0724bb8b89ab6b8b9b7df917b17be0b7.svg" />
+    <Content Include="onlineStore\dist\fonts\fa-solid-900.7ed0b09414b0bf68b15ec4cfcb8a427d.svg" />
+    <Content Include="onlineStore\dist\images\account\facebook.svg" />
+    <Content Include="onlineStore\dist\images\account\search.svg" />
+    <Content Include="onlineStore\dist\images\account\twitter.svg" />
+    <Content Include="onlineStore\dist\images\bag-2.jpg" />
+    <Content Include="onlineStore\dist\images\banner.jpg" />
+    <Content Include="onlineStore\dist\images\basket-cart-icon-27.png" />
+    <Content Include="onlineStore\dist\images\black-camera.jpg" />
+    <Content Include="onlineStore\dist\images\brand\01.png" />
+    <Content Include="onlineStore\dist\images\brand\02.png" />
+    <Content Include="onlineStore\dist\images\brand\03.png" />
+    <Content Include="onlineStore\dist\images\brand\04.png" />
+    <Content Include="onlineStore\dist\images\brand\05.png" />
+    <Content Include="onlineStore\dist\images\cart.png" />
+    <Content Include="onlineStore\dist\images\categorys\chosma.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\drone.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\electronics.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\headphone.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\iphone.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\jumper.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\tree dasher.jpg" />
+    <Content Include="onlineStore\dist\images\categorys\wool-shoe.jpg" />
+    <Content Include="onlineStore\dist\images\company-image\apple.svg" />
+    <Content Include="onlineStore\dist\images\company-image\bKash.svg" />
+    <Content Include="onlineStore\dist\images\company-image\logo.svg" />
+    <Content Include="onlineStore\dist\images\company-image\masterclass.svg" />
+    <Content Include="onlineStore\dist\images\company-image\nagad.svg" />
+    <Content Include="onlineStore\dist\images\company-image\rocket.svg" />
+    <Content Include="onlineStore\dist\images\company-image\visa.svg" />
+    <Content Include="onlineStore\dist\images\digital-shoe.jpg" />
+    <Content Include="onlineStore\dist\images\feature\headphone.jpg" />
+    <Content Include="onlineStore\dist\images\feature\medicine.jpg" />
+    <Content Include="onlineStore\dist\images\feature\multi-products.jpg" />
+    <Content Include="onlineStore\dist\images\feature\tissue.jpg" />
+    <Content Include="onlineStore\dist\images\green-small.jpg" />
+    <Content Include="onlineStore\dist\images\green-tissue.jpg" />
+    <Content Include="onlineStore\dist\images\grocery-item.jpg" />
+    <Content Include="onlineStore\dist\images\Logo.png" />
+    <Content Include="onlineStore\dist\images\logo\logo.png" />
+    <Content Include="onlineStore\dist\images\logo\white.png" />
+    <Content Include="onlineStore\dist\images\nike-shoe.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\1-big-mage.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\1-small-image.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\2-big-image.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\2-small-image.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\3 Small Image.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\3-big-image.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\4-big-image.jpg" />
+    <Content Include="onlineStore\dist\images\product-deatils\4-small-image.jpg" />
+    <Content Include="onlineStore\dist\images\product\01.jpg" />
+    <Content Include="onlineStore\dist\images\product\02.jpg" />
+    <Content Include="onlineStore\dist\images\product\03.jpg" />
+    <Content Include="onlineStore\dist\images\product\04.jpg" />
+    <Content Include="onlineStore\dist\images\product\05.jpg" />
+    <Content Include="onlineStore\dist\images\product\06.jpg" />
+    <Content Include="onlineStore\dist\images\product\07.jpg" />
+    <Content Include="onlineStore\dist\images\product\08.jpg" />
+    <Content Include="onlineStore\dist\images\product\09.jpg" />
+    <Content Include="onlineStore\dist\images\product\cart.svg" />
+    <Content Include="onlineStore\dist\images\screenshot.png" />
+    <Content Include="onlineStore\dist\images\watch.jpg" />
+    <Content Include="onlineStore\dist\images\white-logo.png" />
+    <Content Include="onlineStore\dist\main.css" />
+    <Content Include="onlineStore\dist\main.js" />
+    <Content Include="onlineStore\erro .aspx" />
+    <Content Include="onlineStore\forget-password.aspx" />
+    <Content Include="onlineStore\images\404.png" />
+    <Content Include="onlineStore\images\cancel.png" />
+    <Content Include="onlineStore\images\confirm.png" />
+    <Content Include="onlineStore\images\delete.png" />
+    <Content Include="onlineStore\images\edit.png" />
+    <Content Include="onlineStore\images\erro.png" />
+    <Content Include="onlineStore\images\save.png" />
+    <Content Include="onlineStore\images\sigout.png" />
+    <Content Include="onlineStore\index.aspx" />
+    <Content Include="onlineStore\logout.aspx" />
+    <Content Include="onlineStore\obj\Debug\onlineStore.csproj.FileListAbsolute.txt" />
+    <Content Include="onlineStore\obj\Debug\onlineStore.dll" />
+    <Content Include="onlineStore\obj\Debug\onlineStore.pdb" />
+    <Content Include="onlineStore\onlineStore.csproj.user" />
+    <Content Include="onlineStore\src\js\bootstrap.bundle.min.js" />
+    <Content Include="onlineStore\src\js\bootstrap.min.js" />
+    <Content Include="onlineStore\src\js\jquery-1.12.4.min.js" />
+    <Content Include="onlineStore\src\js\jquery.min.js" />
+    <Content Include="onlineStore\src\js\main.js" />
+    <Content Include="onlineStore\src\scss\vendors\fontawesome\css\fontawesome.min.css" />
+    <Content Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="onlineStore\src\scss\vendors\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\css\jquery.exzoom.css" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\css\nice-select.css" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\css\slick.css" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\css\wan-spinner.css" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\js\jquery.exzoom.js" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\js\jquery.nice-select.min.js" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\js\slick.min.js" />
+    <Content Include="onlineStore\src\scss\vendors\plugin\js\wan-spinner.js" />
+    <Content Include="onlineStore\user-dashboard.aspx" />
+    <Content Include="onlineStore\verify.aspx" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Console.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Globalization.Calendars.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.ZipFile.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Http.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Sockets.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="onlineStore\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\404.aspx.designer.cs">
+      <DependentUpon>404.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\access.aspx.cs">
+      <DependentUpon>access.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\access.aspx.designer.cs">
+      <DependentUpon>access.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\alterapalavrapass.aspx.cs">
+      <DependentUpon>alterapalavrapass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\alterapalavrapass.aspx.designer.cs">
+      <DependentUpon>alterapalavrapass.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\backoffice_encomendas.aspx.cs">
+      <DependentUpon>backoffice_encomendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\backoffice_encomendas.aspx.designer.cs">
+      <DependentUpon>backoffice_encomendas.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\backoffice_produtos.aspx.cs">
+      <DependentUpon>backoffice_produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\backoffice_produtos.aspx.designer.cs">
+      <DependentUpon>backoffice_produtos.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\backoffice_utilizadores.aspx.cs">
+      <DependentUpon>backoffice_utilizadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\backoffice_utilizadores.aspx.designer.cs">
+      <DependentUpon>backoffice_utilizadores.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\billing.aspx.cs">
+      <DependentUpon>billing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\billing.aspx.designer.cs">
+      <DependentUpon>billing.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\erro .aspx.cs">
+      <DependentUpon>erro .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\erro .aspx.designer.cs">
+      <DependentUpon>erro .aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\forget-password.aspx.cs">
+      <DependentUpon>forget-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\forget-password.aspx.designer.cs">
+      <DependentUpon>forget-password.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\index.aspx.designer.cs">
+      <DependentUpon>index.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\Mestra.Master.cs">
+      <DependentUpon>Mestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\Mestra.Master.designer.cs">
+      <DependentUpon>Mestra.Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="onlineStore\Properties\AssemblyInfo.cs" />
+    <Compile Include="onlineStore\user-dashboard.aspx.cs">
+      <DependentUpon>user-dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\user-dashboard.aspx.designer.cs">
+      <DependentUpon>user-dashboard.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\verify.aspx.cs">
+      <DependentUpon>verify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineStore\verify.aspx.designer.cs">
+      <DependentUpon>verify.aspx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="onlineStore\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
