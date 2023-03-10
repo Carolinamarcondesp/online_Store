@@ -5,6 +5,8 @@
 #### This online store website project is for demonstration purposes resulting from academic work carried out within the Technician/Specialist in Information Systems Technologies and Programming course. I used a free online template, the point was not work on the styling of the website but working on its functions. 
 
 
+![N|Solid](https://i.imgur.com/B3Z63G7.png)
+
 ## Technologies Used
 
 * ASP.NET
