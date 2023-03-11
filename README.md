@@ -42,6 +42,6 @@ Features:
 
 ## Comments
 
-This academic workproject was made under a short deadline along with others homeworks and projects the we had to delivery at the same time.. so there's a lot written in Portuguese.. I will, overtime, work to change it to english only. =) 
+This academic workproject was made under a short deadline along with others homeworks and projects the we had to deliver at the same time.. so there's a lot written in Portuguese.. I will, overtime, work to change it to english only. =) 
 
 Copyright © _09/03/2023_ _A.Carolina_
